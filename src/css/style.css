@@ -1,0 +1,362 @@
+body {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;            
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+div {
+    display: block;  
+}
+a {            
+    text-decoration: none;
+            
+}
+.a-black{
+    color: black; 
+}
+.a-alblue{
+    color: aliceblue;
+}
+a:hover {
+    text-decoration: underline;
+}
+nav {
+    background-color: #f1f1f1;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+}
+
+section {
+    margin: 20px;
+}
+.nav-head{
+    float: left;
+    letter-spacing: .1em;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    background: black;
+    height: 40px;
+    font-weight: 200;          
+    top: 0;
+    z-index: 20;            
+}
+.nav-left,
+.nav-left > *,
+.nav-right > * {
+    float: left;
+}
+.nav a{
+    color: aliceblue;
+    font:  200 19px/20px "nyt-cheltenham", Helvetica, serif;
+}
+.nav-left{            
+    margin-left: 7%;
+}
+.nav-left a{
+    color: aliceblue;            
+}   
+.nav-right{
+    float: right;
+    margin-right: 7%;
+}
+.nav-section{
+    float: left;
+    padding: 10px 10px 10px 10px;
+    opacity: .5;
+}        
+.nav-volume, .nav-share, .nav-theme {
+    display: inline-block;
+    padding: 11px 5px;
+}
+.volume-icon{
+    background-image: url(../image/volume.png);
+    background-size: cover;
+}        
+.volume--muted .volume-icon{            
+    background-image: url(../image/mute.png)
+}
+.nav-section, .nav-volume, .nav-share {
+    opacity: .5;
+}
+.nav-section:hover, .nav-section--active, .nav-volume:hover, .nav-share:hover {
+    opacity: 1;
+}
+.nav-sections:before{
+    margin-right: 5px;
+}
+.nav-sections:before,
+.nav-shares:before {
+    content: "";
+    float: left;
+    height: 20px;
+    border-right: solid 1px #444;
+    margin: 9px 15px;
+}
+.nav-icon, .volume-icon{
+    width: 18px;
+    height: 18px; 
+}
+.nav-icon{
+    background-size: contain;
+}
+.nav-share--git .nav-icon{
+    background-image: url(https://avatars.githubusercontent.com/u/81920733?s=400&u=0288f3bba4678c0e2de5606518aa366bafdfa520&v=4);
+}
+.video-container video{
+    width: 100%;
+    position: absolute;
+}
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.video-sequence .video {
+    min-height: 56.25vw;
+}
+.video{
+    padding-top: 40px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}  
+p {
+    display: block;        
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.nav-marker {
+    position: absolute;
+    margin-top: -80px;
+}
+.video-caption {
+    margin-top: -10%;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.video-headline {
+    position: absolute;
+    margin-top: 20%;
+    color: aliceblue;
+    border-bottom: solid 2px aliceblue;
+    text-shadow: none;
+    font-size: 50px;
+    line-height: 55px;
+    padding-bottom: 35px;
+}
+.headline-quote{
+    position: absolute;
+    margin-top: 27%;
+    left: 31%;
+    color: aliceblue;
+}
+.column {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 580px;
+}
+.section {
+    margin-top: 50px;
+}
+.section:after {
+    content: "";
+    clear: left;
+    display: block;
+}
+.section h3{
+    font: 200 30px/40px "nyt-cheltenham", Georgia, serif;
+}
+.dropcap {
+    float: left;
+    font: bold 53px/70px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: -7px 10px 0 0;
+    height: 1em;
+}
+.quote-container {
+    display: flex;
+    position: absolute;
+    margin-top: 27%;
+    max-width: 506px;
+    overflow: hidden;
+}    
+.quote-photo {
+    flex: 1;
+    overflow: hidden;
+}
+
+.quote-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.quote-text {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.quote-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.quote-author {
+    text-align: right;
+    font-style: italic;
+    color: aliceblue;
+}
+.image {
+    width: 120%;
+    margin: 40px -20%;
+}
+.image img{
+    width: 100%;
+    margin-left: 10%;
+}
+.table {
+    display: flex;
+    width: 1100px;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.table h1{            
+    text-align: center;
+}
+.table-cell {
+    width: 250px;
+    margin-top: -30px;
+}
+.table-image{            
+    width: 180px;
+    height: 130px;
+    margin: 60px 40px 43px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.table-title{
+    text-align: center;
+}
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 80px;
+    height: 40px;
+    background: grey;
+    color: #0000;
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 1.5px;
+  left: 2px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #bada55;
+}
+
+input:checked + label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}     
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.video-row:hover{
+    opacity: 1;
+}
+
+.container .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}      
+
+.video-row{   
+    z-index: 20;
+    overflow: hidden;
+    margin-bottom: 5%;
+    opacity: 0;
+    position: relative;
+    bottom: -30%;
+}
+.video-row::-webkit-scrollbar
+{
+   display: none;
+}
+.video-flex{
+    display: flex;
+    width: 1100px;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: auto;                        
+}
+.container ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 10px;
+}
+.container ul li img{
+    width: 200px;
+    transition: all 0.3s;
+}
+.container ul li img:hover{
+    transform: scale(1.1);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
